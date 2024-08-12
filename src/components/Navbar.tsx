@@ -8,7 +8,7 @@ const Navbar = () => {
 
       <div className="pr-10 flex items-center">
         <ThemeToggle />
-        Tim's Workspace <MdOutlineKeyboardArrowDown className="text-3xl ml-3" />
+        Tim&apos;s Workspace <MdOutlineKeyboardArrowDown className="text-3xl ml-3" />
       </div>
     </div>
   );
