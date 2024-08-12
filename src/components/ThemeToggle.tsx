@@ -13,11 +13,10 @@ export default function ThemeToggle() {
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       <span className="bg-[#FFF] dark:bg-[#888686] size-5 rounded-full absolute dark:left-3 right-3 transition-all"></span>
-      {theme === "dark" ? (
-        <IoSunnyOutline className="absolute text-[#E8C364] right-3 -translate-y-1/2 size-6 top-1/2" />
-      ) : (
-        <FiMoon className="absolute text-[#E8C364] left-3 -translate-y-1/2 size-6 top-1/2" />
-      )}
+
+      <IoSunnyOutline className="absolute dark:block hidden text-[#E8C364] right-3 -translate-y-1/2 size-6 top-1/2" />
+
+      <FiMoon className="absolute text-[#E8C364] dark:hidden block left-3 -translate-y-1/2 size-6 top-1/2" />
     </button>
   );
 }

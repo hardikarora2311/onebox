@@ -9,7 +9,7 @@ const client = new QueryClient();
 
 const Providers = ({ children }: { children: ReactNode }) => {
   return (
-    <ThemeProvider attribute="class" defaultTheme="system">
+    <ThemeProvider attribute="class" defaultTheme="dark">
       <QueryClientProvider client={client}>{children}</QueryClientProvider>
     </ThemeProvider>
   );
